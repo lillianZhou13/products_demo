@@ -1,0 +1,15 @@
+
+$colors:(
+    main-blue:#0c2e8a,
+    main-green:#50d8af
+);
+@import '~bootstrap/scss/bootstrap.scss';
+//header
+#header #logo h1 a{
+    color: map-get($colors,main-blue);
+    line-height: 1;
+    display: inline-block;
+  }
+#header #logo h1 a span {
+    color: map-get($colors,main-green);
+  }

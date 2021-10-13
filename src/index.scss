@@ -1,14 +1,51 @@
 $body-bg: #fff;
-
+$colors:(
+    main-blue:#0c2e8a,
+    main-green:#50d8af
+);
 
 
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+
 html{ height:100%; }
 body{ min-height:100%; padding:0; margin:0; position:relative; }
 
+
+
 body::after{ content:''; display:block; height:100px; }
+//header
+#header {
+ 
+  .navbar-brand h1{
+  
+    color: map-get($colors,main-blue);
+    line-height: 1;
+    display: inline-block;
+    span{
+      color: map-get($colors,main-green);
+    }
+  }
+  .navbar-toggler{
+    background-color:map-get($colors,main-green);
+    height:100%;
+    width:auto;
+    .navbar-toggler-icon{
+      color:#fff;;
+    }
+  }
+  
+ .navbar-nav li{
+  li{color:#000;}
+  i{
+    color:map-get($colors,main-green);
+  }
+
+
+ }
+}
+
 
 footer{
   position:absolute;
