@@ -1,0 +1,10 @@
+/*basic styles*/
+.skeleton{
+ background:#ddd;
+ margin:10px 0;
+ border-radius: 4px;
+}
+.skeleton.text{
+ width:100px;
+ height:12px;
+}
